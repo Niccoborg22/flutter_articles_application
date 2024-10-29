@@ -1,0 +1,18 @@
+{
+  "articles": [
+    { "topic": "football", "title": "title 1", "article": "article 1" },
+    { "topic": "motorsport", "title": "title 2", "article": "article 2" },
+    { "topic": "football", "title": "title 3", "article": "article 3" },
+    { "topic": "motorsport", "title": "title 4", "article": "article 4" },
+    { "topic": "football", "title": "title 5", "article": "article 5" },
+    { "topic": "motorsport", "title": "title 6", "article": "article 6" },
+    { "topic": "football", "title": "title 7", "article": "article 7" },
+    { "topic": "motorsport", "title": "title 8", "article": "article 8" },
+    { "topic": "football", "title": "title 9", "article": "article 9" },
+    { "topic": "motorsport", "title": "title 10", "article": "article 10" },
+    { "topic": "other", "title": "title 11", "article": "article 11" },
+    { "topic": "other", "title": "title 12", "article": "article 12" },
+    { "topic": "other", "title": "title 13", "article": "article 13" },
+    { "topic": "other", "title": "title 14", "article": "article 14" }
+  ]
+}
