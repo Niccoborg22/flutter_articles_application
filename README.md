@@ -1,16 +1,23 @@
-# articles_app
+# Flutter Sports Articles Application
 
-A new Flutter project.
+[![Flutter Version](https://img.shields.io/badge/Flutter-v2.5+-blue.svg)](https://flutter.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Getting Started
+A Flutter application that provides users with the latest sports articles from various sources. This app is built with Flutter for cross-platform compatibility and offers a user-friendly interface to explore articles on different sports topics.
+  
+## Demo
+**Website** \
+![Demo_website](demo_screenshot_website.png)
 
-This project is a starting point for a Flutter application.
+**Phone Application** \
+![Demo_phone](demo_screenshot_phone.png)
 
-A few resources to get you started if this is your first Flutter project:
+## Folder Structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+lib/ \
+|-- main.dart        
+|-- assets/ \
+|-- models/ \
+|-- views/  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+In the assets folder you can find the articles json file and the series of images to show in the carousel in the others page. Differently, in models you can find the JSON serialization of the article JSON file while in the views folder there is the UI folder with some UI files and the pages a part from the landing one that is in the main.dart file.
