@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'UI/_title.dart';
 import 'UI/_article_box.dart';
 import '../models/article.dart';
+import 'UI/_title_bar.dart';
 
 // FOOTBALL PAGE
 class FootballPage extends StatefulWidget {
@@ -48,7 +48,7 @@ class _FootballPageState extends State<FootballPage> {
                   return Column(
                     children: [
                       // TITLE
-                      const PageTitle(title: "Football articles"),
+                      const TitleBar(titlePage: "Football articles"),
 
                       // WELCOME TEXT
                       const Text.rich(

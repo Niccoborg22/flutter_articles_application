@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'UI/_title.dart';
 import 'UI/_article_box.dart';
 import '../models/article.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'UI/_title_bar.dart';
 
 
 // OTHER SPORTS PAGE
@@ -75,7 +75,7 @@ List<Widget> carouselItems = [
                   return Column(
                     children: [
                       // TITLE
-                      const PageTitle(title: "Other sports articles"),
+                      const TitleBar(titlePage: "Other sports articles"),
 
                       // WELCOME TEXT
                       const Text.rich(

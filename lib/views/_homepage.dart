@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'UI/_article_box.dart';
-import 'UI/_title.dart';
 import '../models/article.dart';
-
+import 'UI/_title_bar.dart';
 
 // HOME PAGE
 class HomePage extends StatefulWidget {
@@ -52,7 +51,7 @@ class _HomePageState extends State<HomePage> {
               return Column(
                 children: [
                   // TITLE
-                  const PageTitle(title: "Articles Application"),
+                  const TitleBar(titlePage: "Articles Application"),
 
                   // WELCOME TEXT
                   const Center(
@@ -121,3 +120,5 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+
