@@ -24,13 +24,15 @@ class ArticleBox extends StatelessWidget {
       child: ListView(
         shrinkWrap: true,
         children: [
-          Text(title,
-          style: const TextStyle(
-            color: Colors.black,
-            fontSize: 25,
-            fontWeight: FontWeight.bold,
-          ),),
-          Text(article),
+          Center(
+            child: Text(title,
+            style: const TextStyle(
+              color: Colors.black,
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+            ),),
+          ),
+          Text(article, textAlign: TextAlign.justify,),
         ],
       ),
     );
