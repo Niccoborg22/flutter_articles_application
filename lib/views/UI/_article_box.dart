@@ -21,7 +21,8 @@ class ArticleBox extends StatelessWidget {
         color: const Color.fromARGB(129, 211, 211, 211),
         borderRadius: BorderRadius.circular(20)
       ),
-      child: Column(
+      child: ListView(
+        shrinkWrap: true,
         children: [
           Text(title,
           style: const TextStyle(

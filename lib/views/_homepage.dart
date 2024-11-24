@@ -93,9 +93,11 @@ class _HomePageState extends State<HomePage> {
                   ),
 
                   // DISPLAY CURRENT ARTICLE
-                  ArticleBox(
-                      title: articlesList[current].title,
-                      article: articlesList[current].article),
+                  Expanded(
+                    child: ArticleBox(
+                        title: articlesList[current].title,
+                        article: articlesList[current].article),
+                  ),
 
                   // NEXT ARTICLE BUTTON
                   Row(
