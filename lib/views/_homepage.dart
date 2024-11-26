@@ -1,3 +1,5 @@
+import 'package:articles_app/models/quote.dart';
+import 'package:articles_app/services/quote.dart';
 import 'package:flutter/material.dart';
 import 'UI/_article_box.dart';
 import '../models/article.dart';
@@ -15,6 +17,9 @@ class _HomePageState extends State<HomePage> {
   // FUTURE THAT WILL HOLD THE ARTICLES
   late Future<List<Article>> articles;
 
+  // FUTURE THAT WILL HOLD THE QUOTE
+  late Future<Quote> futureQuote;
+
   // CURRENT ARTICLE VAR
   int current = 0;
 
@@ -24,6 +29,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     articles = loadArticlesFromJson();
+    futureQuote = fetchQuote();
   }
 
   // FUNCTION TO CYCLE THROUGH ARTICLES
@@ -36,6 +42,34 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(101, 245, 59, 59),
+
+      // appBar: AppBar(
+      //   title: FutureBuilder<Quote>(
+      //     future: futureQuote,
+      //     builder: (context, snapshot) {
+      //       if (snapshot.hasData) {
+      //         String quote = snapshot.data!.content;
+      //         String author = snapshot.data!.author;
+      //         return Text(
+      //           '"$quote" - $author',
+      //           style: const TextStyle(fontSize: 16), // Adjust font size as needed
+      //         );
+      //       } else if (snapshot.hasError) {
+      //         return Text('Error: ${snapshot.error}');
+      //       }
+
+      //       // By default, show a loading spinner.
+      //       return const SizedBox(
+      //           height: 10,
+      //           width: 10,
+      //           child: CircularProgressIndicator(
+      //             strokeWidth: 2, // Adjust stroke width as needed
+      //             valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+      //           ));
+      //     },
+      //   ),
+      // ),
+      
       body: Center(
         child: FutureBuilder<List<Article>>(
           future: articles,
@@ -122,5 +156,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-
