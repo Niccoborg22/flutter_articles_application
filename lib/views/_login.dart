@@ -70,6 +70,25 @@ class _LoginPageState extends State<LoginPage> {
                             MaterialPageRoute(
                                 builder: (context) => const NavBar()),
                           );
+                        } else {
+                          showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return AlertDialog(
+                                title: const Text("Unauthorized"),
+                                content:
+                                    const Text("Invalid email or password."),
+                                actions: <Widget>[
+                                  TextButton(
+                                    child: const Text("OK"),
+                                    onPressed: () {
+                                      Navigator.of(context).pop();
+                                    },
+                                  ),
+                                ],
+                              );
+                            },
+                          );
                         }
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
